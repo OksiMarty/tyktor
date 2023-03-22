@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: DRFunkNotDead-Regular;
+  src: url(DR_Funk/DRFunkNotDead-Regular.ttf);
+}
+body {
+  font-family: DRFunkNotDead-Regular;
+}
+.container {
+  background-color: #ffcc33;
+  display: flex;
+  height: 5rem;
+  padding-left: 1rem;
+}
+.containerItem1 {
+  flex: 1;
+}
+
+img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.containerItem2 {
+  color: #ff5f00;
+
+  flex: 4;
+}
+.textWrapper {
+  display: flex;
+  height: 5rem;
+}
+.headerText {
+  font-size: 3rem;
+  padding-top: 0.9rem;
+  align-self: center;
+}
+@media (max-width: 1180px) {
+  .headerText {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 642px) {
+  .headerText {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+
+    margin: 0.3rem;
+  }
+}
