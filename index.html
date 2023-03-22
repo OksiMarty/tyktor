@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: DRFunkNotDead-Regular;
+        src: url(src/DR_Funk/DRFunkNotDead-Regular.ttf);
+      }
+      body {
+        font-family: DRFunkNotDead-Regular;
+      }
+      .container {
+        background-color: #ffcc33;
+        display: flex;
+        height: 6rem;
+        padding-left: 1rem;
+      }
+      .containerItem1 {
+        flex: 1;
+      }
+
+      img {
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      .containerItem2 {
+        color: #ff5f00;
+
+        flex: 4;
+      }
+      .headerText {
+        font-size: 3.5rem;
+
+        padding-top: 1rem;
+      }
+      @media (max-width: 642px) {
+        .containerItem2 {
+          flex: 7;
+        }
+        .headerText {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerItem1">
+        <img src="src/top_banner_logo_crop3.svg" alt="" />
+      </div>
+      <div class="containerItem2">
+        <div class="headerText">4 травня український фанк</div>
+      </div>
+    </div>
+  </body>
+</html>
