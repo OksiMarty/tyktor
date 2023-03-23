@@ -15,13 +15,11 @@ body {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 4fr;
-  
+
   grid-template-rows: 5rem;
 
   padding-left: 1rem;
-  line-height: 0.9;
 }
-
 
 img {
   height: 5rem;
@@ -50,7 +48,22 @@ img {
   .headerText {
     font-size: 1.3rem;
     padding: 0.5rem;
-    line-height: 0.95;
+     line-height: 0.95;
     margin: 0.3rem;
+  }
+}
+
+@media (max-width: 285px) {
+  .container {
+    grid-template-rows: 4rem;
+  }
+  img {
+    height: 4rem;
+  }
+  .headerText {
+    font-size: 1rem;
+    padding: 0.3rem;
+    line-height: 0.95;
+    margin: 0.1rem;
   }
 }
